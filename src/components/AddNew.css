@@ -1,0 +1,7 @@
+.enter{
+    margin-left: 34%;
+    display: flex;
+    /*justify-content: space-between;*/
+    width: 30%;
+    background-color: #61dafb;
+}

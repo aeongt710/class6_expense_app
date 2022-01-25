@@ -1,0 +1,15 @@
+
+.Column{
+    display: inline-block;
+    padding: 3px 30px;
+    border-style: groove;
+    border-radius: 20px;
+}
+.income{
+    font-weight: bold;
+    color: green;
+}
+.expense{
+    font-weight: bold;
+    color: red;
+}
