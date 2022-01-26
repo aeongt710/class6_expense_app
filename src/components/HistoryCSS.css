@@ -1,7 +1,8 @@
 
 ul {
     list-style-type: none;
-    margin-left: 35%;
+    padding: 0px;
+    margin-left: 40%;
     margin-right: 40%;
 }
 
@@ -17,13 +18,21 @@ li {
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
 }
+@media only screen and (max-width: 600px){
 
+    ul{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+
+  }
 span li{
     color: #61dafb;
 }
 
 .main {
-    padding: 0px;
+    /*padding: 0px;*/
 }
 
 .plus {
