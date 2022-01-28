@@ -31,7 +31,7 @@ function AddNew(props) {
     return (
         <div>
             <h3>Add New Transaction</h3>
-            <br/>
+            <hr/><br/>
             <div className={"enter"}>
 
                 {/*<div className="group">*/}

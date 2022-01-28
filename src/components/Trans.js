@@ -16,7 +16,8 @@ export const Trans=({transaction})=>{
             </li>
         </div>
     )
-    else return (
+    else if(transaction.amount<0)
+        return (
         <div>
             <li className={"minus"} >
                 {transaction.description}
@@ -25,4 +26,8 @@ export const Trans=({transaction})=>{
             </li>
         </div>
     )
+    else
+        return (
+            <div></div>
+        )
 };

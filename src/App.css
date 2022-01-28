@@ -1,14 +1,28 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
+body {
+    background-color: #f7f7f7;
+}
+
+hr {
+    margin-right: 40%;
+    margin-left: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+
+   hr{
+           margin-right: 10%;
+    margin-left: 10%;
+   }
 
 
-
-
+}
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 

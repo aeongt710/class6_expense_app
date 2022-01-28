@@ -13,15 +13,12 @@ function App() {
         <GlobalProvider>
             <div className="App">
                 <Header/>
-                <hr/>
                 <Balance/>
-                <hr/>
                 <AccountSumary/>
-                <hr/>
+                <br/>
                 <History/>
-                <hr/>
+                <br/>
                 <AddNew/>
-                <hr/>
             </div>
         </GlobalProvider>
     )

@@ -1,37 +1,69 @@
 
-.Column{
+.Column {
     display: inline-block;
     padding: 3px 30px;
     border-style: groove;
+    /*border-color: red;*/
     border-radius: 20px;
 }
-.Row{
-    padding-top: 20px;
-    border: 1px solid black;
+
+.Row {
+    padding-top: 10px;
+    border: 1px solid grey;
     margin-left: 35%;
     margin-right: 35%;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
-.ColumnIncome{
-        display: inline-block;
+
+.ColumnIncome {
+    display: inline-block;
     /*padding: 3px 30px;*/
-    padding-right: 50px;
-    border-right: 1px solid black;
+    padding-right: 90px;
+    border-right: 1px solid grey;
     /*border-right-style: solid;*/
     /*border-bottom-left-radius: 30px;*/
 }
-.ColumnExpense{
-        display: inline-block;
-    padding-left: 50px;
+
+.ColumnExpense {
+    display: inline-block;
+    padding-left: 90px;
     /*padding: 3px 30px;*/
 }
 
-.income{
+
+@media only screen and (max-width: 600px) {
+
+    .ColumnIncome {
+        padding-right: 20px;
+    }
+
+    .ColumnExpense {
+        display: inline-block;
+        padding-left: 20px;
+    }
+
+
+    .Column {
+        padding: 3px 10px;
+        border-style: groove;
+        border-radius: 20px;
+    }
+
+    .Row {
+        padding-top: 10px;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-bottom: 10px;
+    }
+}
+
+.income {
     padding-top: 0px;
     font-weight: bold;
     color: green;
 }
-.expense{
+
+.expense {
     font-weight: bold;
     color: red;
 }

@@ -8,6 +8,7 @@ function History(props) {
     return (
         <div className={"main"}>
             <h3>Transaction History</h3>
+            <hr/>
             <ul>
                 {transactions.map(transaction =>
                     <Trans key={transaction.id} transaction={transaction}/>
