@@ -1,2 +1,2 @@
 # Surge Link
-[Click here](deafening-mass.surge.sh)
+[Click here](https://deafening-mass.surge.sh)
