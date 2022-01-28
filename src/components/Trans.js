@@ -1,6 +1,6 @@
 import React,{useContext} from 'react';
 import {GlobalContext} from "../context/GlobalState";
-
+import './Trans.css';
 
 
 export const Trans=({transaction})=>{
@@ -11,8 +11,8 @@ export const Trans=({transaction})=>{
         <div>
             <li className={"plus"}  >
                 {transaction.description}
-                <span style={{textAlign: "left"}}>+${transaction.amount}</span>
-                <button onClick={()=>DeleteThis(transaction.id)}>X</button>
+                <span style={{textAlign: "left"}} className={"data"}>+${transaction.amount}</span>
+                <button className={"del"} style={{borderRadius: "10px", border: "none"}} onClick={()=>DeleteThis(transaction.id)}>X</button>
             </li>
         </div>
     )
@@ -20,8 +20,8 @@ export const Trans=({transaction})=>{
         <div>
             <li className={"minus"} >
                 {transaction.description}
-                <span style={{textAlign: "left"}}>-${Math.abs(transaction.amount)}</span>
-                <button onClick={()=>DeleteThis(transaction.id)}>X</button>
+                <span style={{textAlign: "left"}} className={"data"}>-${Math.abs(transaction.amount)}</span>
+                <button className={"del"} style={{borderRadius: "10px", border: "none"}} onClick={()=>DeleteThis(transaction.id)}>X</button>
             </li>
         </div>
     )

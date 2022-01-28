@@ -6,10 +6,11 @@ import AccountSumary from "./components/AccountSumary";
 import History from "./components/History";
 import AddNew from "./components/AddNew";
 import {GlobalContext, GlobalProvider} from "./context/GlobalState";
+import IdentityContext from "./context/IdentityContext";
 
 function App() {
     return (
-        <GlobalProvider >
+        <GlobalProvider>
             <div className="App">
                 <Header/>
                 <hr/>
@@ -23,7 +24,8 @@ function App() {
                 <hr/>
             </div>
         </GlobalProvider>
-    );
+    )
+        ;
 }
 
 export default App;

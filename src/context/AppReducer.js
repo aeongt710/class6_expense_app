@@ -6,10 +6,8 @@ export default (state, action) => {
                 transactions: state.transactions.filter(m => m.id !== action.payload)
             }
         case "ADD":
-            console.log("Inside Add Method: ")
-            console.log(action.payload)
-            console.log(...state.transactions)
-            console.log("--------------")
+            state.identity= ++state.identity;
+            console.log(state.identity)
             return {
                 ...state,
                 transactions: [action.payload, ...state.transactions]
